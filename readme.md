@@ -5,4 +5,4 @@ This sample Register/Login front end was built using the Traversy Media tutotial
 This was ported to Cloudant instead of MongoDb
 to facilitate the deployment to IBM Cloud
 
-[![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/jpradier/ceanauthapp.git)
+[![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/AmaryGuisse/ceanauthapp.git&branch=consent)
