@@ -5,10 +5,7 @@ This sample Register/Login front end was built using the Traversy Media tutotial
 This was ported to Cloudant instead of MongoDb
 to facilitate the deployment to IBM Cloud
 
-
 [![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/AmaryGuisse/ceanauthapp.git&branch=consent)
-
-
 
 
 Note if you want to run it locally against your IBM Cloud Cloudant intance, provide a vacp-local.json file such as:
@@ -32,3 +29,4 @@ To avoid CORS Blocking, make sure you are lauching chrome using the following co
 alias chrome="/Applications/Google\\ \\Chrome.app/Contents/MacOS/Google\\ \\Chrome"
 chrome --user-data-dir="/tmp/chrome_dev_test" --disable-web-security 
 [Note you can also install a plugin such as "Allow CORS" to permanently enable CORS from your Chrome browser]
+
