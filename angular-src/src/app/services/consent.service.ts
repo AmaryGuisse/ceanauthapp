@@ -189,7 +189,9 @@ console.log('inside addconsent1');
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
         'Accept': 'application/json',
-        'Authorization': 'Basic bWRtYWRtaW46bWRtYWRtaW4='
+        'Authorization': 'Basic bWRtYWRtaW46bWRtYWRtaW4=',
+        'Access-Control-Allow-Origin': '*'
+
       })
     };
 
@@ -229,7 +231,9 @@ console.log('inside addconsent1');
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
         'Accept': 'application/json',
-        'Authorization': 'Basic bWRtYWRtaW46bWRtYWRtaW4='
+        'Authorization': 'Basic bWRtYWRtaW46bWRtYWRtaW4=',
+        'Access-Control-Allow-Origin': '*'
+
       })
     };
     return this.httpClient.put('http://mdmdemowin:9080/com.ibm.mdm.server.ws.restful/resources/MDMWSRESTful', obj, httpOptions)
@@ -274,7 +278,9 @@ console.log('inside addconsent1');
           headers: new HttpHeaders({
             'Content-Type': 'application/json',
             'Accept': 'application/json',
-            'Authorization': 'Basic bWRtYWRtaW46bWRtYWRtaW4='
+            'Authorization': 'Basic bWRtYWRtaW46bWRtYWRtaW4=',
+            'Access-Control-Allow-Origin': '*'
+
           })
         };
         return this.httpClient.put('http://mdmdemowin:9080/com.ibm.mdm.server.ws.restful/resources/MDMWSRESTful', obj, httpOptions)
