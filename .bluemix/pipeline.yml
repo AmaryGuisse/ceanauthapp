@@ -3,7 +3,7 @@ stages:
 - name: Build Stage
   inputs:
   - type: git
-    branch: master
+    branch: consent
   jobs:
   - name: npm
     type: builder
