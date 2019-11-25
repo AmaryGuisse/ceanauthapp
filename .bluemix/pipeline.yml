@@ -7,21 +7,6 @@ stages:
   jobs:
   - name: npm
     type: builder
-- name: Deploy Stage
-  inputs:
-  - type: job
-    stage: Build Stage
-    job: Build
-  triggers:
-  - type: stage
-  jobs:
-  - name: Deploy
-    type: deployer
-    target:
-      url: https://api.ng.bluemix.net
-      organization: ${CF_ORGANIZATION}
-      space: ${CF_SPACE}
-      application: ${CF_APP}
     script: |-
       #!/bin/bash
       export NVM_DIR=/home/pipeline/nvm
@@ -46,3 +31,19 @@ stages:
 
       cd ..
       npm install
+- name: Deploy Stage
+  inputs:
+  - type: job
+    stage: Build Stage
+    job: Build
+  triggers:
+  - type: stage
+  jobs:
+  - name: Deploy
+    type: deployer
+    target:
+      url: https://api.ng.bluemix.net
+      organization: ${CF_ORGANIZATION}
+      space: ${CF_SPACE}
+      application: ${CF_APP}
+    
